@@ -46,6 +46,9 @@ end
 group :production do
   gem 'rails_12factor'
   # gem 'pg'
+  gem 'capistrano', '~> 3.6', '>= 3.6.1'
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4'
 end
 
 group :development do
