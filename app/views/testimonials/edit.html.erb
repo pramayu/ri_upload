@@ -1,0 +1,20 @@
+<div class="contain">
+  <div class="top_tit">
+   <h2 class="title">Edit Testimonials</h2>
+  </div>
+  <div class="btn_jh">
+    <div class="idis">
+      <ul class="list-inline hdgwt">
+         <li><%= link_to new_testimonial_path do %><i class="fa fa-plus" aria-hidden="true"></i><% end %></li>
+        <li><%= link_to all_testimonial_url do %><i class="fa fa-folder-open" aria-hidden="true"></i><% end %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="cont_ii">
+    <%= render "testimonials/form" %>
+  </div>
+</div>
+<script>
+  $('.respond').removeClass("aktif");      
+  $('.testimonial__').addClass('aktif');
+</script>

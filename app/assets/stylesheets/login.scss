@@ -1,0 +1,51 @@
+@media(min-width: 768px){
+  .clear {
+    clear: both;
+  }
+  .fuv{
+    background-image: url("bg.png");
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .login {
+      padding-top: 120px;
+      padding-left: 10%;
+      .frame {
+        width: 35%;
+        background-color: #fff;
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.75);
+        padding: 30px;
+        .title {
+          font-family: Roboto, Helvetica, Arial;
+          font-size: 32px;
+          font-weight: bold;
+        }
+        .ckdj {
+          .form-group {
+            .dsj {
+              border: none;
+              border-radius: 6px;
+              font: 18px "Helvetica Neue", helvetica, sans-serif;
+              padding: 8px 10px;
+              height: 45px;
+              margin-right: 8px;
+              color: #444;
+              outline: none;
+              box-shadow: none;
+              border: 1px solid #dedede;
+
+            }
+          }
+          .form_ {
+            padding-left: 20px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

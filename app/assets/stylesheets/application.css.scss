@@ -1,0 +1,219 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
+ @import 'font';
+ @import 'index';
+ @import 'show';
+
+ @media(min-width: 768px){
+  .navbar-custom {
+    padding-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    background-color: rgba(255,255,255,0);
+    border: none;
+    z-index: 16;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    .custome_container {
+      width: 750px;
+      margin: 0 auto;
+      .custome-collapse {
+        text-align: center;
+        .navbar-brand {
+          padding-top: 0;
+          padding-bottom: 0;
+          height: auto;
+          line-height: 1;
+          position: relative;
+          width: 24%;
+          left: 0;
+          top: 0;
+          text-align: center;
+          margin: auto;
+          font-family: "Roboto Slab", Helvetica, Arial;
+          font-size: 26px;
+          color: #fff;
+          font-weight: bold;
+          span {
+            font-family: "denseregular", Helvetica, Arial !important;
+            font-size: 16px !important;
+            letter-spacing: 1px !important;
+            font-weight: 500 !important;
+            &:before {
+              position: absolute;
+              width: 50px;
+              height: 2px;
+              background-color: #fff;
+              content: "";
+              margin-top: 4px;
+            }
+          }
+        }
+        .navbar-left {
+          width: 39%;
+          padding-top: 13px;
+          li {
+            width: 93px;
+            text-align: right;
+            a {
+              font-family: "denseregular", Helvetica, Arial;
+              font-size: 20px;
+              padding-top: 0;
+              padding-bottom: 0;
+              background-color: transparent !important;
+              font-weight: bold;
+              text-align: center;
+              outline: none;
+              color: #fff;
+              letter-spacing: .5px;
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+        .navbar-right {
+          padding-top: 13px;
+          width: 39%;
+          li {
+            width: 93px;
+            text-align: left;
+            a {
+              font-family: "denseregular", Helvetica, Arial;
+              font-size: 20px;
+              padding-top: 0;
+              padding-bottom: 0;
+              background-color: transparent !important;
+              color: #fff;
+              text-align: center;
+              font-weight: bold;
+              letter-spacing: .5px;
+              outline: none;
+              text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            }
+          }
+          li.port {
+            .drp_down_ {
+              padding: 0px;
+              margin: 0px;
+              list-style: none;
+              opacity: 0;
+              li {
+                padding: 10px 20px;
+                a {
+                  text-decoration: none;
+                }
+                &:before {
+                  position: absolute;
+                  content:"";
+                  width: 40px;
+                  height: 2px;
+                  background-color: #fff;
+                  margin-top: 25px;
+                }
+              }
+            }
+            &:hover {
+              ul {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-custom_1 {
+    background-color: rgba(247, 247, 247, 0.95);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 3px 0px rgba( 0, 0, 0, 0.1 );
+    -webkit-transform: translateY( -500px );
+    -moz-transform: translateY( -500px );
+    -o-transform: translateY( -500px );
+    -ms-transform: translateY( -500px );
+    transform: translateY( -500px );
+    z-index: 9999;
+    .custome_container {
+      .navbar-nav {
+        padding-top: 8px !important;
+        li {
+          a {
+            color: #ababab !important;
+            text-shadow: none !important;
+            font-weight: 500 !important;
+          }.active_s {
+            color: #42a5f5 !important;
+          }
+        }
+      }
+      .navbar-right {
+        li.port {
+          .drp_down {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            position: absolute;
+            z-index: 99;
+            opacity: 0;
+            li {
+              padding: 10px 20px;
+              a {
+                text-decoration: none;
+                color: #ababab !important;
+              }.active_s {
+                color: #42a5f5 !important;
+              }
+            }
+          }
+          &:hover {
+            .drp_down {
+              opacity: 1;
+              z-index: 99;
+            }
+          }
+        }
+      }
+      .navbar-brand {
+        color: #999 !important;
+        span {
+          &:before {
+            background-color: #999 !important;
+          }
+        }
+      }
+    }
+  }
+  .active_nav {
+    -webkit-transform: translateY( 0 );
+    -moz-transform: translateY( 0 );
+    -o-transform: translateY( 0 );
+    -ms-transform: translateY( 0 );
+    transform: translateY( 0 );
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    -o-transition: -o-transform 0.5s ease;
+    transition: transform .5s ease;
+  }
+  .honestly{
+    -webkit-transform: translateY( 0px ) !important;
+    -moz-transform: translateY( 0px ) !important;
+    -o-transform: translateY( 0px ) !important;
+    -ms-transform: translateY( 0px ) !important;
+    transform: translateY( 0px ) !important;
+  }
+ }

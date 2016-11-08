@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruang Ide Event Organizer</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'todo', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Great+Vibes|Montez|Over+the+Rainbow|Rancho|Roboto+Slab:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+  <% flash.each do |name, msg| %>
+    <div class="alert alert-<%= name %>" style="margin-bottom: 0px; text-align: center;position: absolute;z-index: 999;width: 100%;">
+      <%= msg %> <span id= "close_alt" class="pull-right fa fa-close" style="cursor: pointer;"></span>
+    </div>
+  <% end %>
+  <nav id="mainNav_1" class="navbar navbar-default navbar-custom honestly navbar-custom_1 navbar-fixed-top">
+      <div class="container custome_container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse custome-collapse" id="navbar-collapse-1" style="text-align: center">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#" class="comapny">Company Profile</a></li>
+            <li><a href="#" class="ev_ent">Event</a></li>
+            <li><a href="#" class="gal_er">Gallery</a></li>
+          </ul>
+          <a class="navbar-brand" href="#">
+            RI<br>
+            <span>RUANG IDE</span>
+          </a>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="port"><a href="#">Portfolio</a>
+              <ul class="drp_down">
+                <li><a href="#">Service</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Testimonial</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav> 
+    <div class="containers">
+      <%= yield %>
+    </div>
+  </body>
+</html>

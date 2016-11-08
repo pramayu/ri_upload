@@ -1,0 +1,23 @@
+<div class="gallery" id="gallery">
+  <div class="container">
+    <div class="titl">
+      <h4 class="kk">GALLERY</h4>
+    </div>
+    <div class="con_yt">
+      <% @galleries.each do |event| %>
+      <div class="col-md-4 flor">
+        <div class="trgh">
+          <%= image_tag event.image_url(:thumb), class: "img_event"  %>
+          <%= link_to event_url(event), class: "mask", "data-turbolinks": false do %>
+            <p class="name"><%= event.name %></p>
+            <p class="desc"><%= event.category.name %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>
+<script>
+  $('.gal_er').addClass('active_s')  
+</script>

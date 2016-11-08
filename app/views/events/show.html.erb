@@ -1,0 +1,22 @@
+<div class="shaws">
+  <div class="container">
+    <div class="titlte_show">
+      <h2 class="ff"><%= @event.name %></h2>
+      <div class="sara">
+        <p class="descf"><%= @event.description %></p>
+      </div>
+    </div>
+    <div class="isi_">
+      <div id="pins" class="transitions-enabled">
+        <% @event.galleries.each do |gallery| %>
+          <div class="box panel panel-default">
+            <%= image_tag gallery.source_url(:dinamis), class: "dinamic_image" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('.gal_er').addClass('active_s')  
+</script>

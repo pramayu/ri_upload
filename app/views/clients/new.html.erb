@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_for(@client) do |f| %>
+    <div class="form-group">
+      <%= f.file_field :image %>
+    </div>
+    <%= f.submit "Post", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<script>
+  $('#mainNav').hide();
+</script>

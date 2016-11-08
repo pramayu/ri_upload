@@ -1,0 +1,526 @@
+<div class="slider_">
+  <div id="slider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <% @sliders.each_with_index do |f, index| %>
+        <li data-target="#slider" data-slide-to="<%= index %>" class="<%= 'active' if index == 0 %>"></li>
+      <% end %>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <% @sliders.each_with_index do |slider, index| %>
+        <div class="item <%= 'active' if index == 0 %>" style="background-image: url(<%= slider.image_url %>)">
+          <div class="carousel-caption">
+            <h3><%= slider.caption %></h3>
+            <p><%= slider.subcaption %></p>
+          </div>
+          <div class="hover_"></div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="motto" id="company_profile">
+  <div class="container-fluid cs_">
+    <div class="titl">
+      <h4 class="kk">RUANG IDE</h4>
+    </div>
+      <div class="data-motto">
+        <p class="dter">
+        Ruang ide adalah sebuah perusahaan penyedia jasa industry kreatif yang mempokuskan diri pada bidang event organizer, creative concept, event worker, talent agency, advertising, audio visual, crative concept, dalam penyelenggaraan event maupun aktivitas lainnya kami berkomitmen untuk selalu melakukan pengembangan konsep dengan ide-ide kreatif hingga memiliki ciri khas sendiri demi terciptanya tujuan serta kepuasan client kami, dengan ddukungan team creative dan team produksi kami yang berdedikasi tinggi dan totalitas serta manajemen yang professional, kami selalu mempersembahkan karya-karya terbaik kami kepada pengguna jasa, akhir kata atas nama manajemen Ruang Ide, mengucapkan terima kasih serta apresiasi setinggi-tingginya kepada semua pihak atas perhatian, kepercayaan serta kerja sama aktifnya kepada kami, semoga apa yang kami persembahkan memberi efek positif dan progresif bagi anda. 
+        </p>
+      </div>
+      <div class="title">
+        <h4>Motto</h4>
+        <p>"Peresent Your Progress"</p>
+      </div>
+      <div class="data-motto data_2">
+        <p class="dter">
+        Kami berharap dapat memberikan yang terbaik untuk menunjang segala sesuatu kemajuan serta dukungan postif bagi klien kami agar semua harapan serta cita-cita semua pihak dapat tercipta.<br>
+        </p>
+      </div>
+      <div class="title">
+        <p>"Komitment Perusahaan"</p>
+      </div>
+      <div class="data-motto data_2">
+        <p class="dter">
+       Menjadi perusahaan penyedia jasa kreatif terbaik yang berkomitmen serta konsisten terhadap program kami dengan mengedepankan profesionalitas, sikap dan perilaku positif serta mengutamakan kualitas. 
+        </p>
+      </div>
+      <div class="container">
+      <div class="title">
+        <h4>Legalitas</h4>
+      </div>
+        <div id="legalitas" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#legalitas" data-slide-to="0" class="active"></li>
+            <li data-target="#legalitas" data-slide-to="1"></li>
+            <li data-target="#legalitas" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                <a data-toggle="modal" data-target="#myModal1">
+                  <%= image_tag "legalitas/1b.jpg" %>
+                  <p>VIEW</p>
+                </a>
+                </div>
+              </div>
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                <a data-toggle="modal" data-target="#myModal2">
+                  <%= image_tag "legalitas/2b.jpg" %>
+                  <p>VIEW</p>
+                </a>
+                </div>
+              </div>
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                <a data-toggle="modal" data-target="#myModal3">
+                  <%= image_tag "legalitas/3b.jpg" %>
+                  <p>VIEW</p>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                  <a data-toggle="modal" data-target="#myModal4">
+                  <%= image_tag "legalitas/4b.jpg" %>
+                  <p>VIEW</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                <a data-toggle="modal" data-target="#myModal5">
+                  <%= image_tag "legalitas/5b.jpg" %>
+                  <p>VIEW</p>
+                </a>
+                </div>
+              </div>
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                <a data-toggle="modal" data-target="#myModal6">
+                  <%= image_tag "legalitas/6b.jpg" %>
+                  <p>VIEW</p>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                  <a data-toggle="modal" data-target="#myModal7">
+                    <%= image_tag "legalitas/7b.jpg" %>
+                    <p>VIEW</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                <a data-toggle="modal" data-target="#myModal8">
+                  <%= image_tag "legalitas/8b.jpg" %>
+                  <p>VIEW</p>
+                </a>
+                </div>
+              </div>
+              <div class="col-md-4 legal">
+                <div class="knkn">
+                <a data-toggle="modal" data-target="#myModal9">
+                  <%= image_tag "legalitas/9b.jpg" %>
+                  <p>VIEW</p>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="events_handle" id="service">
+  <div class="container custo">
+    <div class="titl">
+      <h4 class="kk">OUR SERVICE</h4>
+    </div>
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <div class="icon_">
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          <p class="tex_">EVENT ORGANIZER</p>
+          <%= link_to "READ MORE", company_event_organizer_path(:event_organizer), class: "btn_more" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <div class="icon_">
+          <i class="fa fa-bar-chart" aria-hidden="true"></i>
+          <p class="tex_">CORPORATE GATHERING</p>
+          <%= link_to "READ MORE", company_corporate_gathering_url(:corporate_gathering), class: "btn_more" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <div class="icon_">
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+          <p class="tex_">CREATIVE CONCEPT</p>
+          <%= link_to "READ MORE", company_creative_concept_url(:creative_concept), class: "btn_more" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <div class="icon_">
+          <i class="fa fa-audio-description" aria-hidden="true"></i>
+          <p class="tex_">AUDIO VISUAL</p>
+          <%= link_to "READ MORE", company_audio_visual_url(:audio_visual), class: "btn_more" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <div class="icon_">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <p class="tex_">EVENT EQUIPMENT</p>
+          <%= link_to "READ MORE", company_event_equipment_url(:event_equipment), class: "btn_more" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <div class="icon_">
+          <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+          <p class="tex_">ADVERTISING</p>
+          <%= link_to "READ MORE", company_ads_url(:advertising), class: "btn_more" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <%#= image_tag "4b.jpg", class: "img_event"  %>
+      </div>
+    </div>
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <div class="icon_">
+          <i class="fa fa-laptop" aria-hidden="true"></i>
+          <p class="tex_">3D DESIGN & GRAPHIC DESIGN</p>
+          <%= link_to "READ MORE", company_3d_design_url(:design_graphic_design), class: "btn_more" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 flor">
+      <div class="trgh">
+        <%#= image_tag "6b.jpg", class: "img_event"  %>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="event_slider">
+  <div id="eventSlider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators fot">
+      <% @events.each_with_index do |event, index| %>
+        <li data-target="#eventSlider" data-slide-to="<%= index %>" class="<%= 'active' if index == 0 %>"></li>
+      <% end %>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <% @events.each_with_index do |event, index| %>
+        <div class="item <%= 'active' if index == 0 %>" style="background-image: url(<%= event.image_url %>)" id="event">
+          <div class="container">
+            <div class="col-md-6 left">
+              <h2 class="titl"><%= truncate(event.name, length: 45) %></h2>
+              <p class="desc"><%= truncate(event.description, length: 200) %></p>
+              <div class="btn_">
+                <%= link_to "SEE MORE", all_gallery_url, class: "btn show_i", "data-turbolinks": false %>
+              </div>
+            </div>
+            <div class="col-md-6 right"></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="gallery" id="gallery">
+  <div class="container">
+    <div class="titl">
+      <h4 class="kk">GALLERY</h4>
+    </div>
+    <div class="con_yt">
+      <% @galleries.each do |event| %>
+      <div class="col-md-4 flor">
+        <div class="trgh">
+          <%= image_tag event.image_url(:thumb), class: "img_event"  %>
+          <%= link_to event_url(event), class: "mask", "data-turbolinks": false do %>
+            <p class="name"><%= event.name %></p>
+            <p class="desc"><%= event.category.name %></p>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+  <div class="container" style="padding: 0px;">
+    <div class="more">
+      <a class="btn btn_mor" href="/galleries">VIEW ALL GALLERY</a>
+    </div> 
+  </div>
+</div>
+<div class="what_client_say" id="testimonial">
+  <div class="container">
+    <div class="tiltle">
+      <h4>TESTIMONIAL</h4>
+    </div>
+    <div class="dammin">
+      <div id="testClient" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators fot">
+          <% @testimonials.each_with_index do |x, index| %>
+            <li data-target="#testClient" data-slide-to="<%= index %>" class="<%= 'active' if index == 0 %>"></li>
+          <% end %>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <% @testimonials.each_with_index do |test, index| %>
+            <div class="item <%= 'active' if index == 0 %>">
+              <div class="img_h">
+                <%= image_tag test.avatar_url(:thumb) %>
+              </div>
+              <div class="conk">
+                <p><%= test.content %></p>
+              </div>
+              <div class="name_">
+                <p class="test"><%= test.name %></p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="map">
+</div>
+<div class="coo_">
+  <div class="container">
+    <ul class="bb list-inline">
+      <li class="nnn marker">
+        <div class="cogk">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+          <p class="n">
+            Jalan Raya Tajem No.21C Maguwoharjo Sleman Yogyakarta
+          </p>
+        </div>
+      </li>
+      <li class="nnn marker">
+        <div class="cogk">
+          <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+          <p class="n">(0274)2832390</p>
+        </div>
+      </li>
+      <li class="nnn marker">
+        <div class="cogk">
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i></p>
+          <p class="n">6 Days a week from<br>10.00 am to 7.00 pm</p>
+        </div>
+      </li>
+      <li class="nnn marker">
+        <div class="cogk">
+          <p><i class="fa fa-envelope" aria-hidden="true"></i></p>
+          <p class="n">ruangide.yk@gmail.com</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="contact_" id="contact">
+  <div class="container">
+    <div class="hhh">
+      <%= form_for @contact do |f| %>
+        <div class="form-group">
+          <%= f.text_field :name, placeholder: "Your Name", class: "form-control name" %>
+        </div>
+        <div class="form-group">
+          <%= f.email_field :email, placeholder: "Your Email", class: "form-control email" %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :phone, placeholder: "Your Phone", class: "form-control phone" %>
+        </div>
+        <div class="form-group">
+          <%= f.text_area :content, placeholder: "Your Message", class: "form-control message" %>
+        </div>
+        <div class="btn">
+          <%= f.submit "SEND", class: "xb" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="foot">
+  <div class="container">
+    <div class="ndjg">
+      <p class="lho">RI</p>
+      <span class="hhg">RUANG IDE</span>
+    </div>
+    <div class="kluy">
+      <ul class="list-inline">
+        <li><a href="#" class="fc"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="in"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="en"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
+      <div class="anahg">
+        <span class="co"><span>2016 Ruang Ide All right reserved | </span> Privacy Policy</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 1-->
+<div class="modal fade mdl" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gambar 1</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/1b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 2-->
+<div class="modal fade mdl" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gambar 2</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/2b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 1-->
+<div class="modal fade mdl" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gambar 3</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/3b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 4-->
+<div class="modal fade mdl" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gambar 4</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/4b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 5-->
+<div class="modal fade mdl" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gambar 5</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/5b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 6-->
+<div class="modal fade mdl" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gambar 6</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/6b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 7-->
+<div class="modal fade mdl" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gambar 7</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/7b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 8-->
+<div class="modal fade mdl" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gambar 8</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/8b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 9-->
+<div class="modal fade mdl" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Gambar 9</h4>
+      </div>
+      <div class="modal-body">
+        <div class="ksjd">
+          <%= image_tag "legalitas/9b.jpg" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
