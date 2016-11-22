@@ -70,6 +70,7 @@ Rails.application.configure do
  }
   host = '144.217.15.153'
  config.action_mailer.default_url_options = { host: host }
+ config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
