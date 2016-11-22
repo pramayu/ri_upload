@@ -56,6 +56,20 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "google.com",
+    authentication: :plain,
+    enable_starttls_auto: true,
+    user_name: "dmonmad@gmail.com",
+    password: "pramayu10",
+    openssl_verify_mode: 'none'
+ }
+  host = '144.217.15.153'
+ config.action_mailer.default_url_options = { host: host }
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
