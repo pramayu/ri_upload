@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'denseregular';
-    src: font-url( asset-path('dense-regular-webfont.woff2')) format('woff2'),
-         font-url( asset-path('dense-regular-webfont.woff')) format('woff');
+    src: url(font-path('dense-regular-webfont.woff2')) format('woff2'),
+         url(font-path('dense-regular-webfont.woff')) format('woff');
     font-weight: normal;
     font-style: normal;
 
